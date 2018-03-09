@@ -1,0 +1,19 @@
+html {
+	font-family: $global-font-family;
+	font-size: $global-font-size;
+	line-height: $global-line-height;
+	color:$color-primary;
+}
+
+a {
+	color:$button-color;
+	&:hover {
+		color:$color-primary;
+	}
+}
+
+
+
+@include hook-type-misc();
+
+// @mixin hook-type-misc() {}; 

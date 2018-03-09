@@ -1,0 +1,77 @@
+
+
+.form {
+	box-sizing: border-box;
+	border: none;
+	background-color: $form-background;
+	width: 100%;
+	padding: $form-padding;
+	font-size: $form-size;
+
+	&-holder {
+		max-width: 970px;
+		margin: 0 auto;
+		font-size: $form-size;
+	}
+	&-name {
+		box-sizing: border-box;
+		display: inline-block;
+		width: 50%;
+		padding-right: 10px;
+		@media screen and (max-width: 480px) {
+			display: block;
+			width: 100%;
+			padding-right: 0;
+		}
+		margin-bottom: 20px;
+	}
+	&-mail {
+		box-sizing: border-box;
+		display: inline-block;
+		width: 49%;
+		padding-left: 10px;
+		@media screen and (max-width: 480px) {
+			display: block;
+			width: 100%;
+			padding-left: 0;
+		}
+		margin-bottom: 20px;
+	}
+	&-subject {
+		margin-bottom: 20px;
+	}
+
+	&-text {
+		margin-bottom: 20px;
+	}
+	&-submit{
+		background-color: $bg-color-dark;
+		color: $bg-color-white;
+		text-transform:uppercase;
+		cursor: pointer;
+		&:hover{
+			background-color: $bg-color-darken;
+			color:$bg-color-primary;
+		}
+	}
+}
+textarea.form-control {
+	height: auto;
+	resize: vertical;
+}
+.text-white{
+	color:#fff;
+}
+
+@include hook-form-misc();
+
+// @mixin hook-form() {};
+// @mixin hook-form-group() {};
+// @mixin hook-form-control() {};
+// @mixin hook-form-control-focus() {};
+// @mixin hook-form-control-placeholder() {};
+// @mixin hook-form-select() {};
+// @mixin hook-form-radio() {};
+// @mixin hook-form-checkbox() {};
+// @mixin hook-form-file() {};
+// @mixin hook-form-misc() {};
